@@ -1,0 +1,51 @@
+#container {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+#menu {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--secondary-color);
+}
+
+.my-img {
+    margin-top: 3rem;
+    width: 200px;
+    border-radius: 50%;
+    border: 4px solid var(--primary-color);
+}
+
+#menu h1 {
+    font-family: 'Chakra Petch', sans-serif;
+    color: var(--primary-color);
+    margin: 10px 0;
+}
+
+.generico {
+    color: var(--primary-color);
+}
+
+.centraliza {
+    list-style: none;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.centraliza li {
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.social__links {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.social__links:hover {
+    text-decoration: underline;
+}

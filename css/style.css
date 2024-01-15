@@ -1,0 +1,43 @@
+:root {
+    --primary-color: #2BDEFD;
+    --secondary-color: #021017;
+    --tertiary-color: #051f2c;
+}
+
+body {
+    font-family: 'Chakra Petch', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+input[type="text"] {
+    padding: 8px;
+    margin-right: 5px;
+    border: 1px solid var(--primary-color);
+    outline: none;
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+}
+
+button {
+    padding: 8px 15px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: #000000;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #005b8e;
+}
+
+
+.task-table {
+    margin-top: 20px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="/css/tasks.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <div id="menu">
+            <img class="my-img" src="/assets/imgs/ednaldo-luiz.png" alt="Foto Ednaldo Luiz">
+            <h1>Ednaldo Luiz</h1>
+            <p class="generico">
+                Desenvolvedor Full-Stack cursando Desenvolvimento de Sistemas.
+            </p>
+            <ul class="centraliza">
+                <li><a href="https://www.linkedin.com/in/ednaldoluiz" class="social__links">LinkedIn</a></li>
+                <li><a href="https://github.com/EdnaldoLuiz" class="social__links">GitHub</a></li>
+                <li><a href="https://ednaldo-luiz.vercel.app" class="social__links">Portfolio</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <h1>Lista de Tarefas</h1>
+            <div class="task-table">
+                <div class="task-list">
+                    <h3>Dia</h3>
+                    <ul id="day-tasks">
+                        <!-- Tarefas do dia geradas dinamicamente pelo script -->
+                    </ul>
+                    <div class="add-task">
+                        <input autofocus rows="10" cols="50" type="text" id="new-day-task" placeholder="Adicionar Tarefa">
+                        <button id="add-day-task-button">Adicionar</button>
+                    </div>
+                </div>
+                <div class="task-list">
+                    <h3>Noite</h3>
+                    <ul id="night-tasks">
+                        <!-- Tarefas da noite geradas dinamicamente pelo script -->
+                        <li>
+                            <span>Me inscrever em vagas</span>
+                            <span class="delete-task" onclick="deleteTask(this)">❌</span>
+                        </li>
+                    </ul>
+                    <div class="add-task">
+                        <input type="text" id="new-night-task" placeholder="Adicionar Tarefa">
+                        <button id="add-night-task-button">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/tasks.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+#content {
+    flex: 2;
+    padding: 20px;
+    background: var(--tertiary-color);
+}
+
+#content h1 {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.task-table {
+    display: flex;
+    justify-content: center;
+}
+
+.task-list {
+    background: var(--secondary-color);
+    margin-top: 3rem;
+    border: 2px solid var(--primary-color);
+    flex: 1;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    height: 450px;
+}
+
+.task-list h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Chakra Petch', sans-serif;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.add-task {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#day-tasks,
+#night-tasks {
+    list-style-type: disc;
+    padding: 0;
+    text-align: left;
+}
+
+#day-tasks li,
+#night-tasks li {
+    margin-bottom: 5px;
+    color: var(--primary-color);
+}
+
+.delete-task {
+    cursor: pointer;
+    margin-left: 8px;
+    color: red;
+}
